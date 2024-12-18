@@ -15,30 +15,4 @@
  */
 #pragma once
 
-/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
-/* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
-
-#define FORCE_NKRO
-#define STM32_LSECLK 32768
-// fix VIA RGB_light
-#define VIA_HAS_BROKEN_KEYCODES
-
-/* Set 0 if debouncing isn't needed */
-#define DEBOUNCE 5
-
-#define TAP_CODE_DELAY 15
-
-#define HOLD_ON_OTHER_KEY_PRESS
-#define TAP_HOLD_CAPS_DELAY 150
-
-#define RGB_SW_PIN A15    //rgb switch
-
-
-
-#define APOS75_DISABLE_UNDERGLOW     //no use buttom rgb
-
-
-
-
+#include "quantum.h"
